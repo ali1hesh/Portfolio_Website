@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ali Hesham Raza</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ali Hesham Raza</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ali Hesham Raza</h1>
+        <p class="section__text__p2"><span id="alternating-text"></span></p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/aliheshamraza/" target="_blank">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+          /></a>
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/ali1hesh')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/IMG_2777.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              I am a final-year B.Tech student at Aligarh Muslim University,
+              specializing in
+              <strong>Electrical & Electronics Engineering</strong>. Throughout
+              my academic journey, I have developed a robust background in Low
+              Voltage Systems for Electric Vehicles, highlighted by my role as
+              the head of the Low Voltage Systems Department in our university's
+              Formula Student EV team. In this capacity, I led the design and
+              optimization of electrical systems, contributing to our team’s
+              recognition in the
+              <b
+                >6th Annual FSEV Concept Challenge (Pi-EV 2022) of Formula
+                Bharat</b
+              >, where we received multiple awards for our efforts to improve
+              air quality and reduce carbon emissions. Additionally,
+              <b>I completed vocational training at NTPC Ltd.</b>, where I
+              gained hands-on experience with a 660MW supercritical unit. This
+              training involved a detailed understanding of power generation
+              processes, including the operation of high-pressure boilers and
+              the management of long transmission lines. My exposure to advanced
+              technologies and real-time problem-solving in a large-scale power
+              plant environment deepened my understanding of modern energy
+              systems.
+            </p>
+            <p>
+              <strong>
+                Recently, I have developed a strong passion for web
+                technologies, including React and Node.js. I have enjoyed
+                applying these skills in various projects and am now seeking to
+                transition into computer engineering. This shift is driven by my
+                desire to expand my knowledge and explore new opportunities in
+                the ever-evolving tech landscape.</strong
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="exp-details-container">
+        <div class="exp-about-containers">
+          <div class="exp-det-container">
+            <h2 class="experience-sub-title">Low Voltage Systems Engineer</h2>
+            <h3>ZHCET Formula Racing Club</h3>
+            <div class="experience-container">
+              <p class="para1">
+                As the head of the Low Voltage Systems Department on our
+                university's Formula Student EV team, I played a pivotal role in
+                the development and implementation of electrical systems for our
+                formula racing vehicle. My responsibilities included designing
+                and optimizing the vehicle's low voltage electrical circuits,
+                ensuring seamless integration with the overall vehicle
+                architecture. This involved working closely with other
+                departments to coordinate the electrical and mechanical systems,
+                as well as troubleshooting and refining components to enhance
+                performance and reliability.
+              </p>
+              <p class="para1">
+                Our team's commitment to innovation and sustainability was
+                recognized in the 6th Annual FSEV Concept Challenge (Pi-EV 2022)
+                of Formula Bharat, where we earned various rankings and awards.
+                These accolades were a testament to our ability to design a
+                vehicle that not only excelled in performance but also
+                contributed to environmental goals by improving air quality and
+                lowering carbon emissions. Through this experience, I developed
+                a deep understanding of the complexities involved in electric
+                vehicle design, as well as valuable leadership and teamwork
+                skills that will guide me in my future endeavors.
+              </p>
+
+              <a
+                class="news"
+                href="https://indiaeducationdiary.in/amu-team-get-top-ranks-for-designing-formula-electric-car/"
+                target="_blank"
+                >Featured News Article</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="exp-details-container">
+        <div class="experience-about-containers">
+          <div class="exp-det-container">
+            <h2 class="experience-sub-title">Project Trainee</h2>
+            <h3>National Thermal Power Corporation Ltd.</h3>
+            <div class="experience-container">
+              <p class="para1">
+                During my tenure as a project trainee at NTPC Ltd., I had the
+                opportunity to delve into the operations of a 660MW
+                supercritical unit, a sophisticated component in contemporary
+                power generation. My training provided a comprehensive
+                examination of the entire power generation process, from coal
+                handling to the delivery of electricity over long transmission
+                lines.
+              </p>
+              <p class="para1">
+                I gained valuable insights into the operation and maintenance of
+                high-pressure boilers, which are pivotal in generating the steam
+                required for power generation. I was involved in monitoring
+                boiler performance, ensuring optimal combustion processes, and
+                addressing challenges related to thermal efficiency and
+                emissions control.
+              </p>
+              <p class="para1">
+                Additionally, my experience included understanding the
+                integration of advanced technologies designed to manage and
+                distribute the generated power efficiently over long
+                transmission lines. This aspect of the training highlighted the
+                importance of minimizing energy losses and maintaining stability
+                in the power grid.
+              </p>
+              <p class="para1">
+                Overall, my time at NTPC Ltd. offered a thorough understanding
+                of modern power generation technologies and underscored the
+                significance of efficiency, sustainability, and innovation in
+                meeting the growing global demand for electricity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">SKILLS</h1>
+      <div class="skill-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skill-sub-title">Frontend Knowledge</h2>
+            <ul class="list">
+              <li>HTML/CSS</li>
+              <li>JAVASCRIPT</li>
+              <li>TYPESCRIPT</li>
+              <li>REACT</li>
+              <li>REACT NATIVE</li>
+              <li>REDUX</li>
+              <li>ANGULAR</li>
+              <li>JQUERY</li>
+              <li>RESPONSIVE DESIGN</li>
+              <li>WEB ACCESSIBILITY</li>
+              <li>CSS</li>
+              <li>BOOTSTRAP</li>
+              <li>SASS/SCSS</li>
+            </ul>
+          </div>
+          <div class="details-container">
+            <h2 class="skill-sub-title">BACKEND Knowledge</h2>
+            <ul class="list">
+              <li>NODEJS</li>
+              <li>EXPRESS</li>
+              <li>API</li>
+              <li>DATA SECURITY</li>
+              <li>AWS</li>
+              <li>GOOGLE FIREBASE</li>
+              <li>GOOGLE DIALOGFLOW</li>
+              <li>HEROKU</li>
+              <li>NETLIFY</li>
+              <li>JSON</li>
+              <li>REST</li>
+              <li>POSTGRESQL</li>
+              <li>MONGODB</li>
+            </ul>
+          </div>
+
+          <div class="details-container">
+            <h2 class="skill-sub-title">LANGUAGES & TOOLS</h2>
+            <ul class="list">
+              <li>C/C++</li>
+              <li>PYTHON</li>
+              <li>GIT/GITHUB</li>
+              <li>UNIX SHELL</li>
+              <li>GITHUB-ACTION</li>
+              <li>MATLAB</li>
+              <li>INTERNET STANDARD PROTOCOLS (SNMP TCP UDP)</li>
+              <li>UNIX/LINUX</li>
+              <li>IOT</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <a href="https://today1learn.netlify.app/" target="_blank"
+                ><img
+                  src="./assets/project-1.png"
+                  alt="Today We Will Learn"
+                  class="project-img"
+              /></a>
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Today We Will Learn
+            </h2>
+            <h4>
+              <ul class="list">
+                <li>
+                  Developed a site where users can share their thoughts or facts
+                  with others.
+                </li>
+                <li>
+                  Users can interact with others in several ways such as
+                  upvoting or downvoting their shared facts.
+                </li>
+                <li>
+                  Developed the front-end with HTML, CSS, and REACT JS. Created
+                  Mobile Responsive user experience with CSS Grids that allowed
+                  the user to interact freely on any device.
+                </li>
+              </ul>
+            </h4>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/ali1hesh/Today_We_Will_Learn')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://today1learn.netlify.app/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+          <!--<div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:aliheshamraza@gmail.com">aliheshamraza@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://in.linkedin.com/in/aliheshamraza" target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Ali Raza. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
