@@ -8,7 +8,6 @@ function toggleMenu() {
 const words = [
   "Electrical Engineer",
   "Low-Voltage Engineer",
-  
   "Front-End Developer",
 ];
 let index = 0;
